@@ -1,0 +1,182 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background-color: #323232;
+        } 
+        
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5PX;
+            background-color: #005bc6;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .loader {
+            background-color: #323232;
+            height: 100%;
+            padding-top: 14%;
+        }
+        
+        .loader-wheel {
+            border-radius: 50%;
+            border-top: 5px solid #005bc6;
+            animation: spin infinite 2s;
+            width: 300;
+            height: 300;
+                        
+        }
+        
+        @keyframes spin {
+            0% {transform: rotate(0deg)}
+            100% {transform: rotate(360deg)}
+        }
+                
+        @keyframes InDown {
+            0% {transform: translateY(-100px)}
+            100% {transform: translateY(0px)}
+        }
+        
+        .mainBod{
+            display: none;
+        }
+        
+        .ban {
+            background-attachment: fixed;
+            background-image: url(images/keyboard-hi-tech-l.jpg);
+            height: 30%;
+            background-size: cover
+        }
+        
+        .head {
+            
+            font-family: 'Playfair Display', sans-serif;
+            font-size: 70;
+            padding-top:2%;
+            padding-bottom: 2%;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .text {
+            padding: 100;
+            font-size: 30px;
+            font-family: 'Darker Grotesque', sans-serif;
+        }
+        
+        .contact {
+            background-image: url(images/woman-talking-on-cell-phone-at-home-88583816-57bd81303df78c8763d19085.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .overlay2 {
+            background-color: rgba(255, 255, 255, 0.73);
+            padding: 100;
+        }
+        
+        .overlay2 h1 {
+            font-family: 'raleway', sans-serif;
+        }
+        
+        input {
+            width: 50%;
+            padding: 10;
+            margin: 5;
+        }
+        
+        .button {
+            background-color: #323232;
+            width: 10%;
+            color: white;
+        }
+        
+        .c {
+            font-family: 'raleway', sans-serif;
+            font-size: 20px;
+            margin-top: 20
+        }
+        
+        .ban a img {
+            width: 8%;
+            margin: 30
+        }
+    </style>
+    
+    <script>
+    function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+        function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("mainBod").style.display = "block";
+}
+    </script>
+</head>
+<body onload="myFunction()">
+<div class="loader" id="loader">
+    <center>
+<div class="loader-wheel"></div>
+    </center>    
+</div>
+<div class="mainBod" id="mainBod"> 
+<div class="ban">
+    <a href="index.html"><img src="images/logo.png"></a>
+</div>
+    
+<div class="head">
+<center>
+    WHY CHOOSE US?
+</center>
+</div>
+    
+<div class="text">
+   <p> Our promising products and our hospitable services are the reason why the customers like to choose us.Using modern and futuristic technology we provide our users with something completely out of the box. We have superior access to the best talent as we utilize all current advances in research and  technology.
+
+</p>
+<br>
+<p>We have products in different fields.Home cleaning devices,Smart home technology and entertainment devices everything is provided here.
+
+</p>
+</div>
+    
+<div class="contact">
+<div class="overlay2">
+<h1>How to Reach Us</h1>    
+    <form>
+    <input placeholder="Name" name="Name" type="text"><br>
+    <input placeholder="Email" name="email" type="email"><br>
+    <input placeholder="Phone" name="phone" type="number"><br>
+    <input placeholder="Comment" name="comment" type="text"><br>
+    <input class="button" type="submit">
+    </form>
+    
+    <p class="c">
+    91XXXXXXXX
+<br><br>
+response@altech.com
+<br><br>
+New Delhi
+    </p>
+</div>
+    
+</div>
+</div>
+</body>    
+</html>

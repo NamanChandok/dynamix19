@@ -1,0 +1,300 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background-color: #323232;
+        } 
+        
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5PX;
+            background-color: #005bc6;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .loader {
+            background-color: #323232;
+            height: 100%;
+            padding-top: 14%;
+        }
+        
+        .loader-wheel {
+            border-radius: 50%;
+            border-top: 5px solid #005bc6;
+            animation: spin infinite 2s;
+            width: 300;
+            height: 300;
+                        
+        }
+        
+        @keyframes spin {
+            0% {transform: rotate(0deg)}
+            100% {transform: rotate(360deg)}
+        }
+                
+        @keyframes InDown {
+            0% {transform: translateY(-100px)}
+            100% {transform: translateY(0px)}
+        }
+        
+        .mainBod{
+            display: none;
+        }
+        
+        .home {
+            background-image: url(images/UI.jpg);
+            height: 100%;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;    
+        }
+        
+        .bio {
+            background-image: url(images/pile-of-books-open_books.jpg);
+            height: 100%;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;    
+        }
+        
+        .why {
+            background-image: url(images/final-decision-maker.jpg);
+            height: 100%;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;    
+        }
+        
+        .prod {
+            background-image: url(images/thBZY4QPEU.jpg);
+            height: 100%;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;    
+        }
+        
+        .bio .overlay {
+            background-color: rgba(0,0,0,0.2);
+            height: 100%;
+            color: #000;
+            padding-top: 10%;
+        } 
+        
+        .overlay {
+            background-color: rgba(0,0,0,0.5);
+            height: 100%;
+            color: #000;
+            padding-top: 10%;
+        }
+        
+        i {
+            font-family: 'Playfair Display', sans-serif;
+            font-size: 50;
+            font-weight: 100;
+            animation: inRight
+        }
+        
+        .al {
+            font-family: 'dosis', sans-serif;
+            font-size: 50;
+            animation: fadeDown 2s;
+        }
+        
+        .over {
+            background-color: #e4dae2;
+            width: 20%;
+            padding-top: 8%;
+            padding-bottom: 10%;
+            outline-offset: 5px;
+            outline: 5px #e4dae2 solid;
+            
+            margin-top: 10%;
+            margin-left: 40%;
+        }
+        
+        .over h3 {
+            font-family: 'Raleway' ,sans-serif;
+        }
+        
+        .biog {
+            display: block;
+            background-color: #323232;
+            outline-color: #323232;
+            color: #fff;
+        }
+        
+        .pro {
+            display: block;
+            background-color: #000;
+            outline-color: #000;
+            color: #fff;
+        }
+        
+        .wh {
+            display: block;
+            background-color: #fff;
+            outline-color: #fff;
+            color: #000;
+        }
+        
+       .biog h3 a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .pro h3 a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        h3 a {
+            color: #000;
+            text-decoration: none
+        }
+        
+        input {
+            width: 50%;
+            padding: 10;
+            margin: 5;
+        }
+        
+        .button {
+            background-color: #323232;
+            width: 10%;
+            color: white;
+        }
+        
+        .c {
+            font-family: 'raleway', sans-serif;
+            font-size: 20px;
+            margin-top: 20
+        }
+        
+        .contact {
+            background-image: url(images/woman-talking-on-cell-phone-at-home-88583816-57bd81303df78c8763d19085.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .overlay2 {
+            background-color: rgba(255, 255, 255, 0.73);
+            padding: 100;
+        }
+        
+        .overlay2 h1 {
+            font-family: 'raleway', sans-serif;
+        }
+        
+    </style>
+    
+    <script>
+    function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+        function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("mainBod").style.display = "block";
+}
+        
+    $(document).ready(function() {
+	
+	setTimeout(function(){
+		$('body').addClass('loaded');
+	}, 3000);
+	
+});	 
+    </script>
+</head>
+<body onload="myFunction()">
+<div class="loader" id="loader">
+    <center>
+<div class="loader-wheel"></div>
+    </center>    
+</div>
+<div class="mainBod" id="mainBod"> 
+<center>
+    
+
+    
+
+    
+    
+
+
+    
+<div class="home">
+<div class="overlay">
+    <div class="over hom">
+<h1 class="al">AL<i>tech</i></h1>    
+<h3>Accessing the Future</h3>
+</div>
+</div>   
+</div>
+    
+<div class="bio">
+<div class="overlay">
+    <div class="over biog">
+<h1 class="al">BIOGRAPHY</h1>    
+<h3><a href="bio.html">Read More...</a></h3>
+</div>
+</div> 
+</div>
+    
+<div class="why">
+<div class="overlay">
+<div class="over wh">
+<h1 class="al">WHY CHOOSE US?</h1>    
+<h3><a href="why.html">Read more...</a></h3>
+</div>
+</div> 
+</div>
+    
+<div class="prod">
+<div class="overlay">
+    <div class="over pro">
+<h1 class="al">PRODUCTS</h1>    
+<h3><a href="pro.html">Read more...</a></h3>
+</div>
+</div> 
+</div>
+    </center>
+    
+<div class="contact">
+<div class="overlay2">
+<h1>How to Reach Us</h1>    
+    <form>
+    <input placeholder="Name" name="Name" type="text"><br>
+    <input placeholder="Email" name="email" type="email"><br>
+    <input placeholder="Phone" name="phone" type="number"><br>
+    <input placeholder="Comment" name="comment" type="text"><br>
+    <input class="button" type="submit">
+    </form>
+    
+    <p class="c">
+    91XXXXXXXX
+<br><br>
+response@altech.com
+<br><br>
+New Delhi
+    </p>
+</div>
+    
+</div>
+</div>
+</body>    
+</html>
